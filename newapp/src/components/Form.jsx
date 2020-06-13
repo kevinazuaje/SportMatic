@@ -3,12 +3,22 @@ import React, { Component } from "react";
 export default class Form extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      name: "",
+      email: "",
+    };
+    this.ChangeName = this.ChangeName.bind(this);
+    this.ChangeEmail = this.ChangeEmail.bind(this);
   }
 
-  state = {
-    name: "",
-    emai: "",
-  };
+  ChangeName(e) {
+    const changeName = () => this.setState({ name: e.target.value });
+  }
+
+  ChangeEmail(e) {
+    const changeEmail = (e) => this.setState({ email: e.target.value });
+  }
 
   render() {
     return (
@@ -16,25 +26,37 @@ export default class Form extends Component {
         <h1>Contact</h1>
         <form>
           <div>
-            <label htmlFor="name">Full Name</label>
-            <input id="name" type="text" placeholder="Full Name" />
+            <label htmlFor="name">
+              <strong>Full Name</strong>
+            </label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Full Name"
+              onChange={this.changeName}
+            />
           </div>
           <div>
-            <label htmlFor="email">Email</label>
-            <input id="email" type="email" placeholder="example@email.com" />
+            <label htmlFor="email">
+              <strong>Email</strong>
+            </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="example@email.com"
+              onChange={this.changeEmail}
+            />
           </div>
-          <div>
-            <label htmlFor="date">Date</label>
-            <input id="date" type="date" />
-          </div>
+
           <br />
 
           <div>
-            <button>Send</button>
+            <button>Enviar</button>
           </div>
         </form>
         <div>
-          {this.props.name} , {this.props.email}
+          <h2>Hello: {this.state.name}</h2>
+          <p>Your Email: {this.state.email}</p>
         </div>
       </div>
     );
