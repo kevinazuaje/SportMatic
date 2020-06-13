@@ -26,12 +26,6 @@ function App() {
       </div>
       <div>
         <Curse />
-        <Curse />
-        <Curse />
-        <Curse />
-        <Curse />
-        <Curse />
-        <Curse />
       </div>
     </div>
   );
