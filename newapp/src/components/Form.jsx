@@ -8,16 +8,16 @@ export default class Form extends Component {
       name: "",
       email: "",
     };
-    this.ChangeName = this.ChangeName.bind(this);
-    this.ChangeEmail = this.ChangeEmail.bind(this);
+    this.changeName = this.changeName.bind(this);
+    this.changeEmail = this.changeEmail.bind(this);
   }
 
-  ChangeName(e) {
-    const changeName = () => this.setState({ name: e.target.value });
+  changeName(e) {
+    this.setState({ name: e.target.value });
   }
 
-  ChangeEmail(e) {
-    const changeEmail = (e) => this.setState({ email: e.target.value });
+  changeEmail(e) {
+    this.setState({ email: e.target.value });
   }
 
   render() {
