@@ -18,11 +18,12 @@ export default class curse extends Component {
                     <img src={this.props.timage} alt="teacher" />
                   </div>
                 </div>
-                <span className="Small">
+                <span className="small">
                   <h3>{this.props.teacher}</h3>
                 </span>
               </div>
             </div>
+
             <div className="s-main-center">
               <a className="button--ghost-alert button--tiny" href="#">
                 Buy {this.props.price}$
