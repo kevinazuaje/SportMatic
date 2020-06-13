@@ -13,10 +13,9 @@ export default class TopBar extends Component {
         <div class="topbar">
           <div class="ed-grid m-grid-2">
             <p class="s-mb-1 m-mb-0 s-center m-left"></p>
-            <a
-              class="button--cta button--tiny s-to-center m-to-right"
-              href="#"
-            />
+            <a class="button--cta button--tiny s-to-center m-to-right" href="#">
+              Register
+            </a>
           </div>
         </div>
       </div>
