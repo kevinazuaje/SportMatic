@@ -7,7 +7,11 @@ export default class curse extends Component {
       <div>
         <article class="card">
           <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
-            <img src={this.props.cimage} alt="Imagen del curso" />
+            <img
+              src={this.props.cimage}
+              alt="sport driving
+"
+            />
           </div>
           <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2">
             <h2 className="t5 s-mb-2 s-center">{this.props.title}</h2>
@@ -19,13 +23,13 @@ export default class curse extends Component {
                   </div>
                 </div>
                 <span className="small">
-                  <h3>{this.props.teacher}</h3>
+                  <strong>{this.props.teacher}</strong>
                 </span>
               </div>
             </div>
 
             <div className="s-main-center">
-              <a className="button--ghost-alert button--tiny" href="#">
+              <a className="button--ghost-alert button--tiny" href="/">
                 Buy {this.props.price}$
               </a>
             </div>
@@ -45,7 +49,7 @@ export default class curse extends Component {
 // }
 
 // curse.defaultProps = {
-//   name: "no se encontró un nombre",
-//   age: "no se ingresó la edad",
-//   image: "error al cargar archivo",
+//   title: "no se encontró un nombre",
+//   // age: "no se ingresó la edad",
+//   cimage: "error al cargar archivo",
 // };

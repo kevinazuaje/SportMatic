@@ -22,8 +22,7 @@ export default class Form extends Component {
 
   render() {
     return (
-      <div className="ed-grid">
-        <h1>Contact</h1>
+      <div className="ed-grid m-grid-4">
         <form>
           <div>
             <label htmlFor="name">
@@ -34,6 +33,7 @@ export default class Form extends Component {
               type="text"
               placeholder="Full Name"
               onChange={this.changeName}
+              required
             />
           </div>
           <div>
@@ -45,12 +45,13 @@ export default class Form extends Component {
               type="email"
               placeholder="example@email.com"
               onChange={this.changeEmail}
+              required
             />
           </div>
 
           <br />
 
-          <div>
+          <div className="ed-grid s-grid-3">
             <button>Enviar</button>
           </div>
         </form>
