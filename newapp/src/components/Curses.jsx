@@ -79,7 +79,7 @@ export default class Curses extends Component {
         price: 40,
         cimage:
           "https://images.pexels.com/photos/2158963/pexels-photo-2158963.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        teacher: "kevin azuaje",
+        teacher: "teacher 8",
         timage:
           "https://images.pexels.com/photos/247878/pexels-photo-247878.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       },
