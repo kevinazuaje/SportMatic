@@ -88,7 +88,7 @@ const Courseinfo = ({ match }) => {
 
   return cursoactual ? (
     <div className="ed-grid m-grid-3">
-      <h1 className="m-cols-3">Course:{cursoactual.title} </h1>
+      <h1 className="m-cols-3">{cursoactual.title} </h1>
       <img
         className="m-cols-2"
         src={cursoactual.cimage}
@@ -97,7 +97,9 @@ const Courseinfo = ({ match }) => {
       <p className="m-cols-1">{cursoactual.teacher}</p>
     </div>
   ) : (
-    <div>no se encontraron cursos disponibles</div>
+    <div>
+      <h1>no se encontraron cursos disponibles</h1>
+    </div>
   );
 };
 export default Courseinfo;
