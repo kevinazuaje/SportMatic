@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Banner extends Component {
   render() {
@@ -15,9 +16,9 @@ export default class Banner extends Component {
               <div className="main-banner__data s-center">
                 <p className="t2 s-mb-0">Sportmatic</p>
                 <p> Find The Best Coaches</p>
-                <a href="/forms" className="button">
-                  Register!
-                </a>
+                <Link to="/curses" className="button">
+                  Choose your course
+                </Link>
               </div>
             </div>
           </div>

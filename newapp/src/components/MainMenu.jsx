@@ -8,7 +8,10 @@ export default class MainMenu extends Component {
         <div className="ed-grid s-grid-5 lg-grid-4">
           <div className="s-cols-4 l-cols-1 s-cross-center ">
             <a href="/">
-              <img src="" alt="Logo" />
+              <img
+                src="https://ed.team/static/images/logo-premium.svg"
+                alt="Logo"
+              />
             </a>
           </div>
           <div className="s-grid-1 lg-cols-3 s-cross-center s-main-end header-links">
