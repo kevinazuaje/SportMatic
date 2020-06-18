@@ -2,7 +2,7 @@ import React from "react";
 import Form from "./components/Form";
 import "./styles/styles.scss";
 import Banner from "./components/Banner";
-import Curses from "./components/Curses";
+import Courses from "./components/Courses";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CourseInfo from "./components/Courseinfo";
 import MainMenu from "./components/MainMenu";
@@ -11,11 +11,11 @@ const App = () => (
     <MainMenu />
     <Switch>
       <Route path="/" exact component={Banner} />
-      <Route path="/Curses/:id" component={CourseInfo} />
+      <Route path="/Courses/:id" component={CourseInfo} />
 
-      <Route path="/Curses" component={Curses} />
+      <Route path="/Courses" component={Courses} />
 
-      <Route path="/forms" component={Form} />
+      <Route path="/form" component={Form} />
       <Route
         exact
         component={() => (

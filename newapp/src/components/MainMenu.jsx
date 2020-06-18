@@ -24,13 +24,13 @@ export default class MainMenu extends Component {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/curses" activeClassName="active">
+                  <NavLink to="/courses" activeClassName="active">
                     {" "}
                     Courses
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/forms" activeClassName="active">
+                  <NavLink to="/form" activeClassName="active">
                     {" "}
                     Form
                   </NavLink>

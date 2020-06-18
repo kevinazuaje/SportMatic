@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Curse from "./curse";
-export default class Curses extends Component {
+import Course from "./course";
+export default class CourseGrid extends Component {
   render() {
-    const cursos = [
+    const courses = [
       {
         id: 1,
         title: "Sport Driving",
@@ -91,8 +91,8 @@ export default class Curses extends Component {
         </h2>
         <br />
         <div className="ed-grid m-grid-4">
-          {cursos.map((c) => (
-            <Curse
+          {courses.map((c) => (
+            <Course
               key={c.id}
               id={c.id}
               title={c.title}

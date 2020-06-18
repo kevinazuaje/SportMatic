@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 // import curses from "./Curses";
 // import PropType from "prop-types";
 
-const Curse = ({ cimage, id, timage, title, teacher, price }) => (
+const Course = ({ cimage, id, timage, title, teacher, price }) => (
   <div>
     <article class="card">
       <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
-        <Link to={`./curses/${id}`}>
+        <Link to={`./courses/${id}`}>
           {" "}
           <img src={cimage} alt="sport driving" />
         </Link>
@@ -51,4 +51,4 @@ const Curse = ({ cimage, id, timage, title, teacher, price }) => (
 //   // age: "no se ingresó la edad",
 //   cimage: "error al cargar archivo",
 // };
-export default Curse;
+export default Course;

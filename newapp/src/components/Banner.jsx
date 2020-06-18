@@ -16,7 +16,7 @@ export default class Banner extends Component {
               <div className="main-banner__data s-center">
                 <p className="t2 s-mb-0">Sportmatic</p>
                 <p> Find The Best Coaches</p>
-                <Link to="/curses" className="button">
+                <Link to="/courses" className="button">
                   Choose your course
                 </Link>
               </div>

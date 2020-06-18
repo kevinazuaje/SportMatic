@@ -1,5 +1,5 @@
 import React from "react";
-const cursos = [
+const courses = [
   {
     id: 1,
     title: "Sport Driving",
@@ -82,7 +82,7 @@ const cursos = [
   },
 ];
 const Courseinfo = ({ match }) => {
-  const cursoactual = cursos.filter(
+  const cursoactual = courses.filter(
     (c) => c.id === parseInt(match.params.id)
   )[0];
 
