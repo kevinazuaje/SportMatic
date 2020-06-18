@@ -5,15 +5,17 @@ import Banner from "./components/Banner";
 import Curses from "./components/Curses";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CourseInfo from "./components/Courseinfo";
+import MainMenu from "./components/MainMenu";
 const App = () => (
   <Router>
+    <MainMenu />
     <Switch>
       <Route path="/" exact component={Banner} />
-      <Route path="/Curses/:id" exact component={CourseInfo} />
+      <Route path="/Curses/:id" component={CourseInfo} />
 
-      <Route path="/Curses" exact component={Curses} />
+      <Route path="/Curses" component={Curses} />
 
-      <Route path="/forms" exact component={Form} />
+      <Route path="/forms" component={Form} />
       <Route
         exact
         component={() => (

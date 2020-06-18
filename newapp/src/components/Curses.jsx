@@ -4,7 +4,7 @@ export default class Curses extends Component {
   render() {
     const cursos = [
       {
-        id: "1",
+        id: 1,
         title: "Sport Driving",
         price: 130,
         cimage:
@@ -14,7 +14,7 @@ export default class Curses extends Component {
           "https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-1/c0.0.320.320a/p320x320/97062444_256669122377752_5522323495834353664_o.jpg?_nc_cat=105&_nc_sid=dbb9e7&_nc_ohc=galmLzM818YAX_s-20f&_nc_ht=scontent-mia3-2.xx&oh=20c23e187fcb771d9a358dc18922a51e&oe=5F0A4599",
       },
       {
-        id: "2",
+        id: 2,
         title: "Swim",
         price: "70",
         cimage:
@@ -24,7 +24,7 @@ export default class Curses extends Component {
         teacher: "teacher2",
       },
       {
-        id: "3",
+        id: 3,
         title: "Boxing",
         price: "20",
         cimage:
@@ -34,7 +34,7 @@ export default class Curses extends Component {
         teacher: "teacher3",
       },
       {
-        id: "4",
+        id: 4,
         title: "Sprint",
         price: "40",
         cimage:
@@ -44,7 +44,7 @@ export default class Curses extends Component {
           "https://images.pexels.com/photos/936094/pexels-photo-936094.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       },
       {
-        id: "5",
+        id: 5,
         title: "Off Road Driving",
         price: 110,
         cimage:
@@ -54,7 +54,7 @@ export default class Curses extends Component {
           "https://images.pexels.com/photos/4307725/pexels-photo-4307725.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       },
       {
-        id: "6",
+        id: 6,
         title: " Climbing",
         price: 60,
         cimage:
@@ -64,7 +64,7 @@ export default class Curses extends Component {
           "https://images.pexels.com/photos/946337/pexels-photo-946337.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       },
       {
-        id: "7",
+        id: 7,
         title: "Moto Gp",
         price: 199,
         cimage:
@@ -74,7 +74,7 @@ export default class Curses extends Component {
           "https://images.pexels.com/photos/4054069/pexels-photo-4054069.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       },
       {
-        id: "8",
+        id: 8,
         title: " Extreme cycling ",
         price: 40,
         cimage:
@@ -94,6 +94,7 @@ export default class Curses extends Component {
           {cursos.map((c) => (
             <Curse
               key={c.id}
+              id={c.id}
               title={c.title}
               teacher={c.teacher}
               timage={c.timage}
