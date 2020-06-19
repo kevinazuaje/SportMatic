@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Course from "./course";
+import CourseCard from "../Molecules/CourseCard";
 export default class CourseGrid extends Component {
   render() {
     const courses = [
@@ -92,7 +92,7 @@ export default class CourseGrid extends Component {
         <br />
         <div className="ed-grid m-grid-4">
           {courses.map((c) => (
-            <Course
+            <CourseCard
               key={c.id}
               id={c.id}
               title={c.title}

@@ -87,14 +87,22 @@ const Courseinfo = ({ match }) => {
   )[0];
 
   return cursoactual ? (
-    <div className="ed-grid m-grid-3">
-      <h1 className="m-cols-3">{cursoactual.title} </h1>
-      <img
-        className="m-cols-2"
-        src={cursoactual.cimage}
-        alt={cursoactual.title}
-      />
-      <p className="m-cols-1">{cursoactual.teacher}</p>
+    <div>
+      <div className="ed-grid m-grid-3">
+        <h1 className="m-cols-3">{cursoactual.title} </h1>
+
+        <img
+          className="m-cols-2"
+          src={cursoactual.cimage}
+          alt={cursoactual.title}
+        />
+        <p className="m-cols-1">{cursoactual.teacher}</p>
+      </div>
+      <div className="s-main-center">
+        <a className="button--ghost-alert button full " href="/">
+          Buy {cursoactual.price}$
+        </a>
+      </div>
     </div>
   ) : (
     <div>

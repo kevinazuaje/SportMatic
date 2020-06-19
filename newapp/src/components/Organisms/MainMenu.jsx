@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 export default class MainMenu extends Component {
   render() {
     return (
-      <header className="main-header">
-        <div className="ed-grid s-grid-5 lg-grid-4">
+      <header className="main-header ">
+        <div className="ed-grid s-grid-5 lg-grid-4 ">
           <div className="s-cols-4 l-cols-1 s-cross-center ">
             <a href="/">
               <img

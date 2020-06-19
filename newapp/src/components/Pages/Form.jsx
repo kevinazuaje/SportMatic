@@ -52,7 +52,7 @@ export default class Form extends Component {
           <br />
 
           <div className="ed-grid s-grid-3">
-            <button>Enviar</button>
+            <button>Send</button>
           </div>
         </form>
         <div>

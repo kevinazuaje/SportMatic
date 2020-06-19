@@ -29,7 +29,7 @@ const Course = ({ cimage, id, timage, title, teacher, price }) => (
         </div>
 
         <div className="s-main-center">
-          <a className="button--ghost-alert button--tiny" href="/">
+          <a className="button--ghost-alert button--tiny " href="/">
             Buy {price}$
           </a>
         </div>
