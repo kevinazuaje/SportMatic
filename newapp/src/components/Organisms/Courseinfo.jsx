@@ -82,25 +82,25 @@ const courses = [
   },
 ];
 const Courseinfo = ({ match }) => {
-  const cursoactual = courses.filter(
+  const actualCourse = courses.filter(
     (c) => c.id === parseInt(match.params.id)
   )[0];
 
-  return cursoactual ? (
+  return actualCourse ? (
     <div>
       <div className="ed-grid m-grid-3">
-        <h1 className="m-cols-3">{cursoactual.title} </h1>
+        <h1 className="m-cols-3">{actualCourse.title} </h1>
 
         <img
           className="m-cols-2"
-          src={cursoactual.cimage}
-          alt={cursoactual.title}
+          src={actualCourse.cimage}
+          alt={actualCourse.title}
         />
-        <p className="m-cols-1">{cursoactual.teacher}</p>
+        <p className="m-cols-1">{actualCourse.teacher}</p>
       </div>
       <div className="s-main-center">
         <a className="button--ghost-alert button full " href="/">
-          Buy {cursoactual.price}$
+          Buy {actualCourse.price}$
         </a>
       </div>
     </div>
