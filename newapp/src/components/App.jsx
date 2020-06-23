@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CourseInfo from "./Organisms/Courseinfo";
 import MainMenu from "./Organisms/MainMenu";
 import Home from "./Pages/Home";
+import Users from "./Pages/Users";
+// import CardUs from "./Molecules/CardUs";
 
 const App = () => (
   <Router>
@@ -17,6 +19,8 @@ const App = () => (
       <Route path="/Courses" component={Courses} />
 
       <Route path="/form" component={Form} />
+      {/* <Route path="/us" component={CardUs} /> */}
+      <Route path="/users" component={Users} />
       <Route
         exact
         component={() => (

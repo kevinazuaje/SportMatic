@@ -35,6 +35,12 @@ export default class MainMenu extends Component {
                     Form
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink to="/Users" activeClassName="active">
+                    {" "}
+                    Users
+                  </NavLink>
+                </li>
               </ul>
             </nav>
 

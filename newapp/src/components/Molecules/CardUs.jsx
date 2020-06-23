@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import curses from "./Curses";
-// import PropType from "prop-types";
 
-const Course = ({ cimage, id, timage, title, teacher, price }) => (
+const CardUs = () => (
   <div>
     <article class="card">
       <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
-        <Link to={`./courses/${id}`}>
+        <Link to="">
           {" "}
           <img src={cimage} alt="sport driving" />
         </Link>
@@ -37,17 +35,4 @@ const Course = ({ cimage, id, timage, title, teacher, price }) => (
   </div>
 );
 
-//  de esta manera establecemos que valor es esperado, y que valor es
-//  asignado por defecto respectivamente
-// curse.PropTypes ={
-//   name: PropType.string,
-//   sname: PropType.string,
-
-// }
-
-// curse.defaultProps = {
-//   title: "no se encontró un nombre",
-//   // age: "no se ingresó la edad",
-//   cimage: "error al cargar archivo",
-// };
-export default Course;
+export default CardUs;
