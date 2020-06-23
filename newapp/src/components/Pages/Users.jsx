@@ -9,6 +9,12 @@ export default class Users extends Component {
     };
   }
 
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+  }
+
   render() {
     const { users } = this.state;
     return (
