@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import UserCard from "../Molecules/UserCard";
+// import Axios from "axios";
 
 export default class Users extends Component {
   constructor(props) {
@@ -15,6 +16,11 @@ export default class Users extends Component {
       .then((response2) => this.setState({ users: response2 }));
   }
 
+  // componentDidMount() {
+  //   Axios.get("https://jsonplaceholder.typicode.com/users")
+  //     .then((response) => response.json())
+  //     .then((response2) => this.setState({ users: response2 }));
+  // }
   render() {
     const { users } = this.state;
     return (
