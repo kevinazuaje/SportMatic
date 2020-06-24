@@ -10,9 +10,9 @@ export default class Users extends Component {
   }
 
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("https://jsonplaceholder.typicode.com/users", { method: "get" })
       .then((response) => response.json())
-      .then((json) => console.log(json));
+      .then((response2) => this.setState({ users: response2 }));
   }
 
   render() {
@@ -20,7 +20,7 @@ export default class Users extends Component {
     return (
       <div className="ed-grid">
         <h1>Usuarios</h1>
-        <div>
+        <div className="ed-grid s-grid-2 m-grid-3 l-grid-4">
           {users.map((u) => (
             <UserCard
               key={u.id}
