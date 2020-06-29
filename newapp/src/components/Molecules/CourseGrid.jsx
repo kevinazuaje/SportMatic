@@ -1,6 +1,6 @@
 import React from "react";
 import CourseCard from "./CourseCard";
-
+import withLoader from "../HOC/withLoader";
 const CourseGrid = ({ courses }) => (
   <div className="ed-grid m-grid-4">
     {courses.length === 0 ? (
@@ -21,4 +21,4 @@ const CourseGrid = ({ courses }) => (
   </div>
 );
 
-export default CourseGrid;
+export default withLoader(CourseGrid);
