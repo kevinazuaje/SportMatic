@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import UserCard from "../Molecules/UserCard";
+
+import UsersGrid from "../Molecules/UsersGrid";
 // import Axios from "axios";
 
 export default class Users extends Component {
@@ -23,20 +24,6 @@ export default class Users extends Component {
   // }
   render() {
     const { users } = this.state;
-    return (
-      <div className="ed-grid">
-        <h1>Usuarios</h1>
-        <div className="ed-grid s-grid-2 m-grid-3 l-grid-4">
-          {users.map((u) => (
-            <UserCard
-              key={u.id}
-              name={u.name}
-              email={u.email}
-              username={u.username}
-            />
-          ))}
-        </div>
-      </div>
-    );
+    return <UsersGrid users={users} />;
   }
 }

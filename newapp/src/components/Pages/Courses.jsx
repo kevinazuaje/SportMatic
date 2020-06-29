@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import CourseCard from "../Molecules/CourseCard";
-export default class CourseGrid extends Component {
+import CourseGrid from "../Molecules/CourseGrid";
+export default class Courses extends Component {
   constructor(props) {
     super(props);
 
@@ -19,24 +19,12 @@ export default class CourseGrid extends Component {
   render() {
     const { courses } = this.state;
     return (
-      <div>
+      <div className="ed-grid">
         <h2 className="ed-grid center">
           <strong>Sign up and choose one of our events</strong>
         </h2>
         <br />
-        <div className="ed-grid m-grid-4">
-          {courses.map((c) => (
-            <CourseCard
-              key={c.id}
-              id={c.id}
-              title={c.title}
-              teacher={c.teacher}
-              timage={c.timage}
-              price={c.price}
-              cimage={c.cimage}
-            />
-          ))}
-        </div>
+        <div className="ed-grid">{<CourseGrid courses={courses} />}</div>
       </div>
     );
   }

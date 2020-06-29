@@ -3,7 +3,7 @@ import Form from "./Pages/Form";
 import "../styles/styles.scss";
 import Courses from "./Pages/Courses";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import CourseInfo from "./Organisms/Courseinfo";
+import Course from "./Pages/Course";
 import MainMenu from "./Organisms/MainMenu";
 import Home from "./Pages/Home";
 import Users from "./Pages/Users";
@@ -14,7 +14,7 @@ const App = () => (
     <MainMenu />
     <Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/Courses/:id" component={CourseInfo} />
+      <Route path="/Courses/:id" component={Course} />
 
       <Route path="/Courses" component={Courses} />
 
