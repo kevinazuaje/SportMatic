@@ -22,11 +22,6 @@ const Courseinfo = ({ match }) => {
         <img className="m-cols-2" src={state.cimage} alt={state.title} />
         <p className="m-cols-1">{state.teacher}</p>
       </div>
-      <div className="s-main-center">
-        <a className="button--ghost-alert button full " href="/">
-          Buy {state.price}$
-        </a>
-      </div>
     </div>
   ) : (
     <div>
